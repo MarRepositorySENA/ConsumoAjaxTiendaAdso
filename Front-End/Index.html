@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./JS/Cliente.js"></script>
+
+</head>
+<!--Se requiere que cuando cargue la página se ejecute la petición de listar los clientes-->
+<body onload="listarClientes();">
+   <!--Boostrap opcional
+    JQuery obligatorio-->
+    <!-- 
+        es un framework de javascript que entre las herramientas que trae, 
+        ermite hacer peticiones API Restful
+        interfaz que se utiliza para intercambiar informacion
+    -->
+    <table class="table">
+        <thead>
+            <!--Nombre de las columnas-->
+            <tr>
+                <td>Id</td>
+                <td>Tipo Documento</td>
+                <td>Numero Documento</td>
+                <td>Primer Nombre</td>
+                <td>Primer Nombre</td>
+                <td>Primer Apellido</td>
+                <td>Segundo Apellido</td>
+                <td>Genero</td>
+                <td>Fecha Nacimiento</td>
+                <td>Telefono</td>
+                <td>Correo</td>
+                <td>Direccion</td>
+            </tr>
+
+        </thead>
+    
+    <tbody id="cuerpoTabla">
+        <!--Se van a crear los registros
+        de manera automatica, según la petición-->
+
+    </tbody>
+</table>
+</body>
+</html>
